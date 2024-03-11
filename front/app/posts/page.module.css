@@ -1,0 +1,17 @@
+.mainWrapper {
+    margin: 2rem 2rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0rem;
+}
+.mainWrapper hr {
+    width: 50%;
+    border: none;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+}

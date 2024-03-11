@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts panel</title>
+    <script th:src="@{/script/postsPanel.js}"></script>
+</head>
+<body>
+    <script th:inline="javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const test1 = [[${savedPostId}]];
+            if (test1) {
+                console.log(test1)
+                alert(test1);
+            }
+        });
+    </script>
+    <p>Список публикаций</p>
+    <button onclick="openInNewTab('./create');">Создать новую публикацию</button>
+</body>
+</html>

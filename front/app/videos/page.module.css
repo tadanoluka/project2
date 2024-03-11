@@ -1,0 +1,8 @@
+.mainWrapper {
+    margin: 2rem 2rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0rem;
+}

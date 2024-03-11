@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+</head>
+<body>
+    <h3>Посты</h3>
+    <!--/*@thymesVar id="post" type="com.tadanoluka.project2.entity.Post"*/-->
+    <div class="post" th:each="post: ${posts}">
+        <div class="postImage"></div>
+        <div class="postInfo">
+            <h5 class="postDate" th:text="${post.getCreatedAt().toLocalDate() + ' ' + post.getCreatedAt().toLocalTime()}"></h5>
+            <h3 class="postTitle" th:text="${post.getTitle()}"></h3>
+            <div class="postContent" th:text="${post.getContent()}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

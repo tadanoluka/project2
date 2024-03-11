@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page {
+    padding: 5px;
+    width: 800px;
+}
+.header {
+    background: #ffffff;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header .headerPersonInfo {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+.header .headerPhoto {
+    height: 40px;
+    width: 40px;
+    background: #bdbdbd;
+    border: #757575 solid 1px;
+}
+.header .searchbar {
+    border: #545454 solid 1px;
+}
+.nav {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.nav div {
+    flex: 1 1 200px;
+    text-align: center;
+}
+.posts {
+    background: #ffffff;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    gap: 10px;
+}
+.posts .post {
+    display: flex;
+    flex-flow: row;
+    height: 400px;
+    gap: 10%
+}
+.posts .post .postInfo {
+    width: 50%;
+    margin: auto;
+}
+.posts .post .postImage {
+    width: 50%;
+    background: #bdbdbd;
+    border: #757575 solid 1px;
+}
+.feedback {
+    background: #ffffff;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+.about {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+

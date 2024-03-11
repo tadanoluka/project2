@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Create post</title>
+</head>
+<body>
+<!--/*@thymesVar id="post" type="com.tadanoluka.project2.entity.Post"*/-->
+<form action="#" th:action="@{/admin/posts/create}" method="post" enctype="multipart/form-data" th:object="${post}">
+    <p><label for="image">Изображение</label></p>
+    <input type="file" id="image" name="image" placeholder="Выберите изображение">
+
+    <label th:for="${ids.next('title')}">Заголовок</label>
+    <input type="text" th:field="*{title}" id="title" name="title" placeholder="Введите заголовок">
+<!--    <p th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Ошибка</p>-->
+
+<!--    <p><label for="content">Текст</label></p>-->
+<!--    <textarea th:field="*{content}" id="content" placeholder="Введите текст публикации"></textarea>-->
+
+    <input type="reset" value="Сбросить">
+    <input type="submit" value="Создать">
+</form>
+</body>
+</html>

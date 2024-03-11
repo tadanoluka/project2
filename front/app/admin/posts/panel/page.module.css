@@ -1,0 +1,105 @@
+.postsPanelContent {
+    width: 100%;
+    box-sizing: border-box;
+}
+.postsPanelControls {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    box-shadow: black;
+    padding: 2rem 2rem 1rem;
+    box-sizing: border-box;
+    gap: 4rem;
+}
+.searchBar {
+    outline: none;
+    appearance: none;
+    background: white;
+    color: black;
+    border: 1px solid #767676;
+    border-radius: 3px;
+    padding: 0.2rem;
+    flex: 1
+}
+.createNewButton {
+    appearance: none;
+    text-decoration: none;
+    border: 1px solid #767676;
+    text-align: center;
+    padding: 0.3rem 1.5rem;
+    border-radius: 3px;
+    background: #545454;
+    color: white;
+    user-select: none;
+}
+.createNewButton:hover {
+    background: #3f3f3f;
+}
+.createNewButton:active {
+    background: #545454;
+}
+.controlHrTable {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 1px;
+    background: #a1a1a1;
+    color: #a1a1a1;
+}
+.postsTable {
+    width: 100%;
+    border: none;
+    padding: 1rem 2rem 2rem;
+    box-sizing: border-box;
+}
+.postsTable tbody tr {
+    height: 2rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.postsTable tbody tr:hover {
+    -webkit-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    background: white;
+}
+.tableButton {
+    margin: 5px;
+    padding: 0.4rem;
+    width: 110px;
+    flex: 1;
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.tableButton:hover {
+    background: #545454;
+    color: white;
+}
+.tableButton:active {
+    background: #767676;
+    color: white;
+}
+.removeButton {
+    margin: 5px;
+    padding: 0.4rem;
+    width: 110px;
+    flex: 1;
+    appearance: none;
+    background: #fa6161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.removeButton:hover {
+    background: #f83c3c;
+}
+.removeButton:active {
+    background: #b23b3b;
+}
